@@ -20,6 +20,8 @@ EOS
       end
     rescue NoMethodError => e
       Puppet.debug "structured facts: #{key} is not a string!"
+    rescue Exception
+      Puppet.debug "structured facts: #{key} did not parse properly!"
     end
   end
 end
