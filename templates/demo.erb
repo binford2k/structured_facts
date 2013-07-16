@@ -1,0 +1,19 @@
+This is a demonstration of structured facts.
+
+Using standard facts, I must perform this malarky to iterate over
+specially munged fact pairs to get IP addresses for interfaces:
+
+<% @interfaces.split(',').each do |iface| -%>
+  <% ipaddr = scope.lookupvar("ipaddress_#{iface}") -%>
+  * <%= iface %>:<%= ipaddr %>
+<% end -%>
+
+Using structured facts, I can simply iterate and output:
+
+<% @ipaddresses.each do |key, value| -%>
+  * <%= key %>: <%= value %>
+<% end -%>
+
+<% @mounts.each do |key, value| -%>
+  * <%= key %>: <%= value.inspect %>
+<% end -%>
