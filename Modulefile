@@ -1,5 +1,5 @@
 name    'binford2k-structured_facts'
-version '0.0.1'
+version '0.0.2'
 author 'binford2k'
 license 'Apache License, Version 2.0'
 summary 'Parses JSON encoded facts into Puppet data structures'
