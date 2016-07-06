@@ -1,0 +1,12 @@
+{
+  "name": "binford2k-structured_facts",
+  "version": "0.0.3",
+  "author": "binford2k",
+  "summary": "Parses JSON encoded facts into Puppet data structures",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/binford2k/structured_facts",
+  "project_page": "https://github.com/binford2k/structured_facts",
+  "issues_url": "https://github.com/binford2k/structured_facts/issues",
+  "description": "This function parses JSON encoded facts that begins with a magic marker string and sets corresponding global facts of the same name to the data structure that the original fact decodes to.",
+  "dependencies": [  ]
+}
