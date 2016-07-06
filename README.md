@@ -1,6 +1,12 @@
 Introduction
 ============
 
+## Deprecation notice:
+
+This module is only of use for historical reasons and for older Puppet
+releases. Puppet has included native structured facts for several years
+now. If you are anywhere near current, please use those instead!
+
 ### Structured Facts
 
 This simply parses JSON encoded facts into Puppet data structures and
