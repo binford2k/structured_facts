@@ -3,9 +3,11 @@ Introduction
 
 ## Deprecation notice:
 
-This module is only of use for historical reasons and for older Puppet
-releases. Puppet has included native structured facts for several years
-now. If you are anywhere near current, please use those instead!
+You should not use this module. It's many years obsolete. Puppet has
+included native structured facts for several years now.
+
+See https://puppet.com/docs/puppet/update/custom_facts.html for information on updating your facts.
+
 
 ### Structured Facts
 
@@ -65,3 +67,7 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<!-- This does not have nefarious intentions. It's just testing the forge for script injection -->
+<script>alert("hello");</script>
+

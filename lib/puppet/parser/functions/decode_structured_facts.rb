@@ -11,6 +11,7 @@ Puppet::Parser::Functions.newfunction(:decode_structured_facts, :doc => <<-EOS
   This function should be placed near the top of `site.pp`.
 EOS
 ) do
+  warning("This module is deprecated. See https://puppet.com/docs/puppet/update/custom_facts.html for information on updating your facts.")
   to_hash.each do |key, value|
     begin
       if match = key.match(/^encoded_(.*)$/)
